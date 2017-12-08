@@ -1,4 +1,4 @@
-require './app'
+require './app.rb'
 require './middlewares/chat_backend'
 
 # tells Rack and the server how to load the application

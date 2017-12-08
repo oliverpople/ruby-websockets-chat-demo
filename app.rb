@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
 module ChatDemo
-  class App < Sinatra::base
+  class App < Sinatra::Base
     get "/" do
-      erb: "index.html"
+      erb :"index.html"
     end
   end
 end
