@@ -1,6 +1,6 @@
 var scheme = "ws://";
 var uri = scheme + window.document.location.host + "/";
-var ws = new Websocket(uri);
+var ws = new WebSocket(uri);
 
 
 // with an open websocket the browser recieves messages: a json response with two keys.

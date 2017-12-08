@@ -25,7 +25,7 @@ module ChatDemo
         # the event object contains the message data which is then sent to every client of the server
         ws.on :message do |event|
           p [:message, event.data]
-          @client.each {|clients| client.send(event.data)}
+          @clients.each {|client| client.send(event.data)}
         end
 
         # close gets invoked when the client closes the connection. close cleans up by deleting the client from the cleints array
