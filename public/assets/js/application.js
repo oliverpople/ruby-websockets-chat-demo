@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 var scheme = "ws://";
 var uri = scheme + window.document.location.host + "/";
 var ws = new WebSocket(uri);
@@ -20,4 +23,6 @@ $("input-form").on("submit", function(event) {
   var text = $("#input-text")[0].value;
   ws.send(JSON.stringify({handle: handle, text: text}));
   $("#input-text")[0].value = "";
+});
+
 });
